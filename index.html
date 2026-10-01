@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="HAKODA MANBOK — Digital History Project">
+<title>HAKODA MANBOK | Digital History</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<a href="index.html" class="logo">
+  <span class="logo-mark">H</span>
+  <span>HAKODA <span class="gold">MANBOK</span></span>
+</a>
+<nav class="nav-links" id="navLinks">
+<a href="index.html" data-section="home" class="active">Home</a>
+<a href="roots.html" data-section="roots" class="">Roots</a>
+<a href="mongolia.html" data-section="mongolia" class="">13th Century</a>
+<a href="japan-mongolia.html" data-section="japanmongolia" class="">Japan–Mongolia</a>
+<a href="family.html" data-section="family" class="">日蒙家庭</a>
+<a href="purewater.html" data-section="purewater" class="">Pure Water</a>
+<a href="essay.html" data-section="essay" class="">感想文</a>
+<a href="future.html" data-section="future" class="">Future</a>
+</nav>
+<div class="nav-actions">
+<select id="languageSelect" class="lang-select">
+  <option value="mn">MN</option>
+  <option value="ja">日本語</option>
+  <option value="en">EN</option>
+</select>
+<button class="icon-btn" id="themeButton">☾</button>
+<button class="icon-btn menu-btn" id="menuButton">☰</button>
+</div>
+</div>
+</header>
+
+<main>
+<section class="hero section" id="home">
+
+<div class="container hero-grid">
+
+<div class="reveal">
+
+<div class="eyebrow">
+DIGITAL HISTORY PROJECT · 2026
+</div>
+
+<h1>
+<span>HAKODA</span>
+<span class="gradient-text">MANBOK</span>
+</h1>
+
+<p class="lead" id="heroText">
+Хакода гэр бүлийн түүх → Монголын 13-р зуун →
+Япон–Монголын түүх → 日蒙家庭 →
+Pure Water → ирээдүй.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#roots" class="btn btn-primary">
+Түүхийг эхлүүлэх →
+</a>
+
+<a href="#essay" class="btn">
+感想文 унших
+</a>
+
+<button class="btn btn-cyan" id="printButton">
+📄 PDF / Print
+</button>
+
+</div>
+
+<div class="hero-tags">
+
+<span class="pill">🇲🇳 Монгол</span>
+<span class="pill">🇯🇵 日本</span>
+<span class="pill">💧 Pure Water</span>
+<span class="pill">🌊 一滴 → 川 → 海</span>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<strong>6</strong>
+<span>үеийн шугам</span>
+</div>
+
+<div class="stat">
+<strong>13C</strong>
+<span>Монголын түүх</span>
+</div>
+
+<div class="stat">
+<strong>14</strong>
+<span>Pure Water өдөр</span>
+</div>
+
+<div class="stat">
+<strong>3</strong>
+<span>хэл</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hero-visual reveal">
+
+<div class="orbit"></div>
+<div class="orbit orbit2"></div>
+
+<div class="float f1">🧬 家族史</div>
+<div class="float f2">🗺️ 13世紀</div>
+<div class="float f3">🇯🇵🇲🇳 日蒙家庭</div>
+<div class="float f4">💧 Pure Water</div>
+
+<div class="hero-center">
+
+<div>
+
+<div class="water-drop">
+<span>💧</span>
+</div>
+
+<h3 style="margin-top:30px">
+一滴の水 → 川 → 海
+</h3>
+
+<p class="muted">
+One drop → River → Ocean
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+</main>
+
+<footer>
+<div class="container footer">
+<div>
+<strong>HAKODA MANBOK</strong>
+<p>Digital History Project · <span id="currentYear"></span></p>
+</div>
+<div class="footer-links">
+<a href="roots.html">Roots</a>
+<a href="mongolia.html">13th Century</a>
+<a href="purewater.html">Pure Water</a>
+<a href="essay.html">感想文</a>
+<a href="future.html">Future</a>
+</div>
+</div>
+</footer>
+
+
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="eyebrow" id="modalEyebrow">DETAIL</div>
+        <h3 id="modalTitle"></h3>
+      </div>
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+<button id="backTop">↑</button>
+<div id="toast"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
